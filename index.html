@@ -18,8 +18,10 @@
 
   <section id="site-landing">
     <nav>
-    <div class="row nav-row">
+    <div class="row nav__row">
+      <div class="nav__logo">
       <img class="nav__logo--img" src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg">
+      </div>
       <div class="nav__logo--title">Treact</div>
     </div>
      <div class="nav__links">
@@ -30,11 +32,38 @@
         <a class="nav__link" href="#login">Login</a>
         <a class="nav__link" href="#signup" class="signup">Sign Up</a>
      </div>
-     <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+     <button class="btn__menu" onclick="openMenu()">
+      <svg xmls="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="btn__menu--svg">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
      </button>
+   </div>
+   </nav>
+    <div class="modal">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+               class="light___StyledCloseIcon-lj69nl-14 fASujC">
+               <line x1="18" y1="6" x2="6" y2="18"></line>
+               <line x1="6" y1="6" x2="18" y2="18"></line>
+           </svg>
+        </button>
+        <div class="modal__links">
+             <a class="modal__link">About</a>
+             <a class="modal__link">Blog</a>
+             <a class="modal__link">Pricing</a>
+             <a class="modal__link">Contact Us</a>
+             <a class="modal__link">Login</a>
+             <a class="modal__link modal__link--primary">Sign Up</a>
+        </div>
     </div>
-    </nav>
-   
+  
+    <!-- HEADER / ABOUT US -->
+     
   </header>
     <div class="container">
       <div class="row">
@@ -402,7 +431,7 @@
           </a>
       </div>
       <div class="footer__column">
-        <div class="footer__column--title">PRODUCT
+        <div class="footer__column--title">PRODUCT</div>
           <a class="footer__column--link">
             Log-In
           </a>
@@ -421,11 +450,11 @@
         </div>
       </div>
       <div class="footer__column">
-        <div class="footer__comumn--title">PRESS
-          <a class="footer__Column--link">
+        <div class="footer__comumn--title">PRESS</div>
+          <a class="footer__column--link">
             Logos
           </a>
-          <a class="footer__Column--link">
+          <a class="footer__column--link">
             Events
           </a>
           <a class="footer__column--link">
@@ -437,14 +466,14 @@
         </div>
       </div>
       <div class="footer__column">
-        <div class="footer__Column--title">TEAM
-          <a class="footer__Column--link">
+        <div class="footer__column--title">TEAM</div>
+          <a class="footer__column--link">
             Career
           </a>
-          <a class="footer__Column--link">
+          <a class="footer__column--link">
             Founders
           </a>
-          <a class="footer__Column--link">
+          <a class="footer__column--link">
             Culture
           </a>     
           <a class="footer__column--link">
@@ -453,8 +482,8 @@
         </div>
       </div>
       <div class="footer__column">
-        <div class="Footer__column--title">LEGAL
-          <a class="footer__Column--link">
+        <div class="Footer__column--title">LEGAL</div>
+          <a class="footer__column--link">
             GDPR
           </a>
           <a class="footer__column--link">
@@ -463,12 +492,31 @@
           <a class="footer__column--link">
             Terms of Service
           </a>
-          <a class="footer__Column--link">
+          <a class="footer__column--link">
             Disclaimer
+          </a>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__bottom">
+        <div class="footer__logo">
+          <img class="footer__logo--img" src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt>
+          <h5 class="footer__logo--text">Treact Inc.</h5>
+        </div>
+        <div class="footer__copyright">
+          © 2018 Treact Inc. All Rights Reserved. 
+        </div>
+        <div class="footer__socials">
+          <a class="footer__social--link">
+            <img class="footer__social--link" src="./assets/facebook.svg">
+          </a>
+          <a class="footer__social--link">
+            <img class="footer__social--link" src="./assets/twitter.svg">
+          </a>
+          <a class="footer__social--link">
+            <img class="footer__section--link" src="./assets/youtube.svg">
           </a>
         </div>
       </div>
-
     </div>
   </div>
   
