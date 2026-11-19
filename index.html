@@ -14,29 +14,32 @@
 </head>
 <body>
 
-  <!-- LANDING -->
+  <!-- NAVIGATION -->
 
-  <header class="row nav__row">
+  <nav>
+  <div class="row nav__row">
     <div class="nav__logo">
-      <img src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="LOGO>
-      <div class="nav__logo--title">Treact</div>
-      <button class="btn__menu" onclick="openMenu()">
+      <img class="nav__logo--img" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="LOGO>
+      <div> class="nav__logo--title">Treact</div>
+      <div class="nav__links"></div>
+    </div>
+      <div class="nav__links">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#blog">Blog</a>
+        <a class="nav__link" href="#pricing">Pricing</a>
+        <a class="nav__link" href="#contact">Contact Us</a>
+        <a class="nav__link login" href="#login">Login</a>
+        <a class="nav__link--primary" href="#signup" class="signup">Sign Up</a>
+      </div>
+        <button class="btn__menu" onclick="openMenu()">
         <svg xmls="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
           class="btn__menu--svg">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
-      </svg>
-     </button>
-     <nav class="nav__links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#blog">Blog</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact Us</a>
-        <a href="#login">Login</a>
-        <a href="#signup" class="signup">Sign Up</a>
-     </nav>
+        </svg>
+      </button>
     </div>
   </header>
 
@@ -69,7 +72,8 @@
           <h1>Beautiful React Templates <span style="color:#6415ff"> for you.</span>
           </h1>
           <p class="header__description--para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-          <div class="header__email--input" type="text" placeholder="Your E-mail Address">
+          <div class="header__email">
+            <input class="header__email--input" type="text" placeholder="Your E-mail Address">            
           <button class="header__email--btn">Get Started</button>
           </div>
           <p class="header__customer--title">OUR TRUSTED CUSTOMERS</p>
